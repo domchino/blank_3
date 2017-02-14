@@ -6,6 +6,17 @@ git_source(:github) do |repo_name|
 end
 
 
+
+
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+gem 'carrierwave', '~> 1.0'
+gem 'acts_as_commentable_with_threading', '~> 2.0', '>= 2.0.1'
+gem 'acts_as_votable', '~> 0.10.0'
+gem 'html2haml', '~> 2.1'
+gem 'haml', '~> 4.0', '>= 4.0.7'
+gem 'devise', '~> 4.2'
+gem 'better_errors', '~> 2.1', '>= 2.1.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
 # Use sqlite3 as the database for Active Record

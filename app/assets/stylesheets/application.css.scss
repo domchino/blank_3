@@ -10,6 +10,45 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
+ *= require font-awesome
  */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+
+
+$open-sans: 'Open Sans', sans-serif;
+$roboto: 'Roboto', sans-serif;
+
+h1 {
+  font-family: $roboto;
+  color: #bd3636;
+}
+p {
+  font-family: $open-sans;
+  color: #ebebe6;
+}
+p.dope {
+  font-family: $open-sans;
+  color: #6eb6b1
+}
+ body {
+   padding-top: 70px;
+   background: #373939;
+ }
+
+.navbar-default {
+  font-family: $open-sans;
+}
+.navbar-brand {
+  position: relative;
+  margin-top: -18px;
+}
+.navbar-header {
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+}
+.navbar-left {
+  margin-left: -130px;
+}
