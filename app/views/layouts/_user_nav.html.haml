@@ -17,7 +17,18 @@
         %li
           = link_to 'About', about_path
       %ul.nav.navbar-nav.navbar-right
+        %li.dropdown
+          %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+            = "@" + current_user.username
+            %span.caret
+          %ul.dropdown-menu
+            %li
+              %a{:href => "#"} Profile
+            %li.divider{:role => "separator"}
+            %li
+              = link_to 'Edit Profile', edit_user_registration_path
+            %li.divider{:role => "separator"}
+            %li
+              = link_to 'Logout', destroy_user_session_path, method: :delete
         %li
-          = link_to 'Login', new_user_session_path
-        %li
-          = link_to 'Sign up', new_user_registration_path
+          = link_to 'Communtiy', community_path

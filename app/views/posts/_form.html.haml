@@ -1,0 +1,17 @@
+.panel.panel-default
+  .panel-heading
+    %h1 New Post
+  .panel-body
+    = form_for @post do |f|
+      .form-group
+        = f.label :title
+        %br/
+        = f.text_field :title
+      .form-group
+        = f.label :content
+        %br/
+        = f.text_area :content
+      .form-group
+        = f.submit "Post", class: "btn btn-danger btn-lg"
+%button#link-style3.btn.btn-primary
+  = link_to 'Cancel', community_path

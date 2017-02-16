@@ -1,0 +1,11 @@
+%h1 Community
+%p Where the categories will be displayed
+%button.btn.btn-warning
+  = link_to 'Post', new_post_path
+- @posts.each do |post|
+  %h1= link_to post.title, post
+  %p
+    = "~ Posted " + time_ago_in_words(post.created_at) + " ago"
+    by
+    = "@" + post.user.username + " ~"
+  %hr
